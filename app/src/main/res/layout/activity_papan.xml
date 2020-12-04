@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PapanActivity">
+
+    <TextView
+        android:id="@+id/text_judul_lihat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="PAPAN SKOR"
+        android:textSize="24sp"
+        android:textColor="@color/colorHeading"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/list_skor"
+        android:layout_below="@id/text_judul_lihat"/>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Skor"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/backgroundGojek"
+        android:background="#FC8338"
+        android:textStyle="bold"
+        android:onClick="resetSkor"
+        />
+
+    />
+
+
+</RelativeLayout>

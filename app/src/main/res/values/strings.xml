@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Project UTS MP</string>
+    <string name="title">Membaca dan Menulis Angka Terbilang</string>
+    <string name="author">Zam Zam Saeful Bahtiar</string>
+    <string name="npm">432007006170196</string>
+    <string name="enter_name">Silahkan masukan nama kamu</string>
+    <string name="title_training">Latihan</string>
+    <string name="subtitle_training">Berlatih sebelum kuis</string>
+    <string name="title_quiz">Kuis</string>
+    <string name="subtitle_quiz">Mengasah kemampuan</string>
+    <string name="btnMulai">Mulai</string>
+</resources>

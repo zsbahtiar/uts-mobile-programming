@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticeActivity">
+
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1000"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/labelTerbilang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Silahkan masukan angka terbilang"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/number"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        />
+
+    <EditText
+        android:id="@+id/angkaTerbilang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/labelTerbilang"
+        app:layout_constraintStart_toStartOf="parent"
+        android:maxLines="2"
+        android:textSize="16dp"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/btnCheckTerbilang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Periksa"
+        android:background="@color/primaryGojek"
+        android:textColor="@color/backgroundGojek"
+        app:layout_constraintTop_toBottomOf="@id/angkaTerbilang"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="checkAnswer"
+        />
+
+        <Button
+
+            android:id="@+id/btnVoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cara Membaca"
+            android:background="#FBAF18"
+            android:textColor="@color/backgroundGojek"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnCheckTerbilang"
+            android:onClick="checkAnswer"
+            android:layout_marginTop="5dp"
+
+            />
+
+
+    <TextView
+        android:id="@+id/labelCTA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coba masukan teks dibawah ini"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnVoice"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+
+        />
+    <TextView
+        android:id="@+id/terbilangView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Silahkan masukan angka terbilang"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelCTA"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        android:textColor="@color/primaryGojek"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
